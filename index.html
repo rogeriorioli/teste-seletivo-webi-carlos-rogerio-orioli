@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ProFatto - Revestimentos e Louças de Alto Padrão</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&display=swap" rel="stylesheet">
+	<script src="scripts/tailwind.js"></script>
+</head>
+
+<body class="bg-white">
+	<!-- Header -->
+	<header class="text-white font-sans absolute top-0 left-0 right-0 z-10">
+		<div class="max-w-6xl mx-auto px-4">
+			<div class="flex items-center justify-between py-4">
+				<!-- Logo -->
+				<div class="logo">
+					<a href="#" class="logo-link">
+						<img src="images/logo.png" alt="ProFatto">
+					</a>
+
+				</div>
+				<!-- Mobile Menu Button -->
+				<button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+				<!-- Contact Info -->
+				<div class="hidden md:flex items-center space-x-4">
+					<span class="text-md flex items-center gap-2">
+						<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14.875 2.42504C14.1109 1.65347 13.2009 1.04168 12.198 0.625347C11.195 0.20901 10.1193 -0.00355264 9.03337 4.49126e-05C4.48337 4.49126e-05 0.775041 3.70838 0.775041 8.25838C0.775041 9.71671 1.15837 11.1334 1.87504 12.3834L0.708374 16.6667L5.08337 15.5167C6.29171 16.175 7.65004 16.525 9.03337 16.525C13.5834 16.525 17.2917 12.8167 17.2917 8.26671C17.2917 6.05838 16.4334 3.98338 14.875 2.42504ZM9.03337 15.125C7.80004 15.125 6.59171 14.7917 5.53337 14.1667L5.28337 14.0167L2.68337 14.7L3.37504 12.1667L3.20837 11.9084C2.523 10.8143 2.15914 9.54944 2.15837 8.25838C2.15837 4.47504 5.24171 1.39171 9.02504 1.39171C10.8584 1.39171 12.5834 2.10838 13.875 3.40838C14.5147 4.04493 15.0216 4.80216 15.3664 5.63615C15.7111 6.47014 15.8869 7.36428 15.8834 8.26671C15.9 12.05 12.8167 15.125 9.03337 15.125ZM12.8 9.99171C12.5917 9.89171 11.575 9.39171 11.3917 9.31671C11.2 9.25004 11.0667 9.21671 10.925 9.41671C10.7834 9.62504 10.3917 10.0917 10.275 10.225C10.1584 10.3667 10.0334 10.3834 9.82504 10.275C9.61671 10.175 8.95004 9.95004 8.16671 9.25004C7.55004 8.70004 7.14171 8.02504 7.01671 7.81671C6.90004 7.60838 7.00004 7.50004 7.10837 7.39171C7.20004 7.30004 7.31671 7.15004 7.41671 7.03338C7.51671 6.91671 7.55837 6.82504 7.62504 6.69171C7.69171 6.55004 7.65837 6.43338 7.60837 6.33338C7.55837 6.23338 7.14171 5.21671 6.97504 4.80004C6.80837 4.40004 6.63337 4.45004 6.50837 4.44171H6.10837C5.96671 4.44171 5.75004 4.49171 5.55837 4.70004C5.37504 4.90838 4.84171 5.40838 4.84171 6.42504C4.84171 7.44171 5.58337 8.42505 5.68337 8.55838C5.78337 8.70004 7.14171 10.7834 9.20837 11.675C9.70004 11.8917 10.0834 12.0167 10.3834 12.1084C10.875 12.2667 11.325 12.2417 11.6834 12.1917C12.0834 12.1334 12.9084 11.6917 13.075 11.2084C13.25 10.725 13.25 10.3167 13.1917 10.225C13.1334 10.1334 13.0084 10.0917 12.8 9.99171Z"
+								fill="white" />
+						</svg>
+
+						(48) 3207-2722</span>
+					<div class="flex space-x-2">
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.53057 12.4373H3.9313V7.43103H6.09436L6.33203 4.94353H3.9313V3.68728C3.9313 3.52152 3.99453 3.36255 4.10709 3.24534C4.21965 3.12813 4.37231 3.06228 4.53148 3.06228H6.33203V0.562279H4.53148C3.73559 0.562279 2.9723 0.891519 2.40952 1.47757C1.84674 2.06362 1.53057 2.85848 1.53057 3.68728V4.94353H0.330202L0.0925293 7.43103H1.53057V12.4373Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M4.11644 0.249779H9.15798C11.0786 0.249779 12.639 1.87478 12.639 3.87478V9.12478C12.639 10.0862 12.2723 11.0082 11.6195 11.688C10.9666 12.3679 10.0812 12.7498 9.15798 12.7498H4.11644C2.19585 12.7498 0.635376 11.1248 0.635376 9.12478V3.87478C0.635376 2.91337 1.00213 1.99134 1.65496 1.31152C2.30778 0.631697 3.1932 0.249779 4.11644 0.249779ZM3.9964 1.49978C3.42336 1.49978 2.87379 1.73683 2.46859 2.15879C2.06338 2.58075 1.83574 3.15304 1.83574 3.74978V9.24978C1.83574 10.4935 2.80204 11.4998 3.9964 11.4998H9.27801C9.85106 11.4998 10.4006 11.2627 10.8058 10.8408C11.211 10.4188 11.4387 9.84652 11.4387 9.24978V3.74978C11.4387 2.50603 10.4724 1.49978 9.27801 1.49978H3.9964ZM9.78817 2.43728C9.98714 2.43728 10.178 2.51959 10.3187 2.6661C10.4594 2.81261 10.5384 3.01133 10.5384 3.21853C10.5384 3.42573 10.4594 3.62444 10.3187 3.77096C10.178 3.91747 9.98714 3.99978 9.78817 3.99978C9.5892 3.99978 9.39837 3.91747 9.25768 3.77096C9.11698 3.62444 9.03794 3.42573 9.03794 3.21853C9.03794 3.01133 9.11698 2.81261 9.25768 2.6661C9.39837 2.51959 9.5892 2.43728 9.78817 2.43728ZM6.63721 3.37478C7.4331 3.37478 8.1964 3.70402 8.75918 4.29007C9.32196 4.87612 9.63812 5.67098 9.63812 6.49978C9.63812 7.32858 9.32196 8.12344 8.75918 8.70949C8.1964 9.29554 7.4331 9.62478 6.63721 9.62478C5.84132 9.62478 5.07802 9.29554 4.51524 8.70949C3.95246 8.12344 3.63629 7.32858 3.63629 6.49978C3.63629 5.67098 3.95246 4.87612 4.51524 4.29007C5.07802 3.70402 5.84132 3.37478 6.63721 3.37478ZM6.63721 4.62478C6.15967 4.62478 5.7017 4.82232 5.36403 5.17395C5.02636 5.52558 4.83666 6.0025 4.83666 6.49978C4.83666 6.99706 5.02636 7.47397 5.36403 7.8256C5.7017 8.17724 6.15967 8.37478 6.63721 8.37478C7.11474 8.37478 7.57272 8.17724 7.91039 7.8256C8.24806 7.47397 8.43776 6.99706 8.43776 6.49978C8.43776 6.0025 8.24806 5.52558 7.91039 5.17395C7.57272 4.82232 7.11474 4.62478 6.63721 4.62478Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="14.4044" height="15" transform="translate(0.859863 0.374924)" fill="#8B941F" />
+								<path
+									d="M5.02512 3.4998C5.02496 3.83132 4.89834 4.14919 4.67312 4.3835C4.44789 4.6178 4.14251 4.74934 3.82416 4.74917C3.5058 4.74901 3.20054 4.61715 2.97554 4.38261C2.75054 4.14808 2.62423 3.83007 2.62439 3.49855C2.62455 3.16703 2.75117 2.84915 2.97639 2.61485C3.20162 2.38054 3.507 2.24901 3.82536 2.24917C4.14371 2.24934 4.44897 2.38119 4.67397 2.61573C4.89897 2.85027 5.02528 3.16828 5.02512 3.4998ZM5.06113 5.6748H2.6604V13.4998H5.06113V5.6748ZM8.85429 5.6748H6.46556V13.4998H8.83028V9.39355C8.83028 7.10605 11.6932 6.89355 11.6932 9.39355V13.4998H14.0639V8.54355C14.0639 4.6873 9.82659 4.83105 8.83028 6.7248L8.85429 5.6748Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M5.28645 6.37478L8.4014 4.49978L5.28645 2.62478V6.37478ZM12.2246 1.48103C12.3026 1.77478 12.3566 2.16853 12.3926 2.66853C12.4346 3.16853 12.4526 3.59978 12.4526 3.97478L12.4887 4.49978C12.4887 5.86853 12.3926 6.87478 12.2246 7.51853C12.0745 8.08103 11.7264 8.44353 11.1863 8.59978C10.9042 8.68103 10.388 8.73728 9.59577 8.77478C8.81553 8.81853 8.10131 8.83728 7.44111 8.83728L6.48682 8.87478C3.97205 8.87478 2.40557 8.77478 1.78738 8.59978C1.24722 8.44353 0.899112 8.08103 0.749066 7.51853C0.671042 7.22478 0.617026 6.83103 0.581015 6.33103C0.539002 5.83103 0.520996 5.39978 0.520996 5.02478L0.484985 4.49978C0.484985 3.13103 0.581015 2.12478 0.749066 1.48103C0.899112 0.918529 1.24722 0.556029 1.78738 0.399779C2.06947 0.318529 2.58563 0.262279 3.37787 0.224779C4.15811 0.181029 4.87232 0.162279 5.53253 0.162279L6.48682 0.124779C9.00159 0.124779 10.5681 0.224779 11.1863 0.399779C11.7264 0.556029 12.0745 0.918529 12.2246 1.48103Z"
+									fill="white" />
+							</svg>
+						</div>
+					</div>
+					<button
+						class="bg-profatto-accent text-white px-4 py-2 flex items-center justify-center h-max rounded text-sm font-semibold">
+						CONTATO
+					</button>
+				</div>
+			</div>
+
+
+
+			<!-- Navigation -->
+			<nav class="naviagtion hidden lg:block">
+				<ul class="flex space-x-8 justify-between text-xl">
+					<li><a href="#" class="text-profatto-accent hover:text-white transition-colors">Home</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Sobre Nós</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Conteúdos</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Projetos ProFatto</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Vídeos</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">ExperienzaFatto</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Imersão Jacuzzi</a></li>
+				</ul>
+			</nav>
+
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="hidden md:hidden absolute bg-profatto-dark top-full left-0 w-full py-4 px-4 z-20">
+				<ul class="flex flex-col space-y-4 text-xl">
+					<li><a href="#" class="text-profatto-accent hover:text-white transition-colors">Home</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Sobre Nós</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Conteúdos</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Projetos ProFatto</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Vídeos</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">ExperienzaFatto</a></li>
+					<li><a href="#" class="hover:text-profatto-accent transition-colors">Imersão Jacuzzi</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="h-[80vh] bg-cover bg-center bg-no-repeat relative w-full "
+		style="background-image: url('images/hero.png');">
+		<div class="absolute inset-0 bg-gradient-to-b from-[#092820] to-transparent bg-opacity"></div>
+		<div class="relative container mx-auto px-4 h-full flex items-center justify-center">
+			<h1
+				class="text-white text-4xl md:text-5xl font-normal  text-center relative after:content-[''] after:absolute after:top-[-30px] after:left-1/2 after:-translate-x-1/2 after:bg-white after:w-[122px] after:h-[2px] before:content-[''] before:absolute before:bottom-[-30px] before:left-1/2 before:-translate-x-1/2 before:bg-white before:w-[122px] before:h-[2px]">
+				Revestimentos e Louças de Alto Padrão
+		</div>
+		<!-- Carousel indicators -->
+		<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+			<div class="w-2 h-2 bg-white rounded-full"></div>
+			<div class="w-2 h-2 bg-white bg-opacity-50 rounded-full"></div>
+			<div class="w-2 h-2 bg-white bg-opacity-50 rounded-full"></div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="py-16">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col lg:flex-row items-center gap-12">
+				<div class="lg:w-1/2">
+					<img src="images/place.png" alt="ProFatto Building" class="rounded-lg shadow-lg w-full">
+				</div>
+				<div class="lg:w-1/2">
+					<h2
+						class="text-3xl font-normal mb-6 relative before:content-[''] before:absolute before:bottom-[-5px] before:left-0 before:bg-profatto-accent before:w-32 before:h-[2px]">
+						Sobre <span class="text-profatto-accent">Nós</span>
+					</h2>
+					<p class="text-black mb-4">
+						Lorem ipsum dolor sit amet consectetur. Massa vitae in sed pharetra. Id sit purus urna sed
+						facilisis cursus fringilla. Dignissim elit diam purus tellus tristique nec senectus turpis
+						tellus. Risus nam amet risus vitae tristique vestibulum gravida luctus vulputate. Lorem nunc
+						etiam hendrerit diam pulvinar eu. Placerat sed nunc vel eget cursus.
+					</p>
+					<p class="text-black mb-8">
+						Risus nam amet risus vitae tristique vestibulum gravida luctus vulputate. Lorem nunc etiam
+						hendrerit diam pulvinar eu. Placerat sed nunc.
+					</p>
+
+					<!-- Statistics -->
+					<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+						<div class="text-center">
+							<div class="text-2xl font-bold text-profatto-accent">+ 250</div>
+							<div class="text-md text-black font-bold">FORNECEDORES</div>
+						</div>
+						<div class="text-center">
+							<div class="text-2xl font-bold text-profatto-accent">+ 1.000</div>
+							<div class="text-md text-black font-bold">CLIENTES</div>
+						</div>
+						<div class="text-center">
+							<div class="text-2xl font-bold text-profatto-accent">+ 2.000</div>
+							<div class="text-md text-black font-bold">REVESTIMENTOS</div>
+						</div>
+						<div class="text-center">
+							<div class="text-2xl font-bold text-profatto-accent">+ 1.000</div>
+							<div class="text-md text-black font-bold">CLIENTES</div>
+						</div>
+					</div>
+
+					<button
+						class="bg-profatto-accent text-white px-6 py-3 rounded font-normal leading-none  hover:bg-opacity-90 transition-colors">
+						SAIBA MAIS
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- How We Help Section -->
+	<section class="py-16">
+		<div class="max-w-7xl mx-auto px-4">
+			<h2 class="text-3xl font-normal text-center mb-4">
+				Como a <span class="text-profatto-accent">ProFatto</span> pode te ajudar
+			</h2>
+			<div class="border-b-2 border-profatto-accent w-24 mx-auto mb-12"></div>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="flex items-center gap-4">
+					<div
+						class="w-16 h-16 bg-profatto-accent leading-none aspect-square rounded-full flex items-center justify-center text-white text-5xl font-bold mx-auto">
+						1
+					</div>
+					<div class="flex flex-col">
+
+						<h3 class="text-xl mb-2">Lorem Ipsum</h3>
+						<p class="text-black font-thin">
+							Lorem ipsum dolor sit amet consectetur. Massa vitae in sed pharetra. Id sit purus urna sed
+							facilisis cursus fringilla.
+						</p>
+					</div>
+				</div>
+				<div class="flex items-center gap-4">
+					<div
+						class="w-16 h-16 bg-profatto-accent leading-none aspect-square rounded-full flex items-center justify-center text-white text-5xl font-bold mx-auto">
+						2
+					</div>
+					<div class="flex flex-col">
+
+						<h3 class="text-xl mb-2">Lorem Ipsum</h3>
+						<p class="text-black font-thin">
+							Lorem ipsum dolor sit amet consectetur. Massa vitae in sed pharetra. Id sit purus urna sed
+							facilisis cursus fringilla.
+						</p>
+					</div>
+				</div>
+				<div class="flex items-center gap-4">
+					<div
+						class="w-16 h-16 bg-profatto-accent leading-none aspect-square rounded-full flex items-center justify-center text-white text-5xl font-bold mx-auto">
+						3
+					</div>
+					<div class="flex flex-col">
+
+						<h3 class="text-xl mb-2">Lorem Ipsum</h3>
+						<p class="text-black font-thin">
+							Lorem ipsum dolor sit amet consectetur. Massa vitae in sed pharetra. Id sit purus urna sed
+							facilisis cursus fringilla.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Newsletter Section -->
+	<section class="py-16 bg-profatto-accent">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+				<div class="md:w-1/3">
+					<h2 class="text-2xl font-bold text-white mb-2">NEWSLETTER</h2>
+					<p class="text-white">
+						Cadastre-se e seja um primeira mão de nossas principais novidades.
+					</p>
+				</div>
+				<div class="md:w-2/3 flex flex-col md:flex-row gap-4">
+					<input type="text" placeholder="Cadastre seu nome"
+						class="flex-1 px-4 py-3 rounded-xl border-none outline-none bg-white">
+					<input type="email" placeholder="Cadastre seu email"
+						class="flex-1 px-4 py-3 rounded-xl border-none outline-none bg-white">
+					<button
+						class="bg-profatto-dark text-white px-8 py-3 rounded-xl font-semibold hover:bg-opacity-90 transition-colors">
+						ENVIAR
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-profatto-dark text-white py-12">
+		<div class="container mx-auto px-4">
+			<div class="grid md:grid-cols-4 gap-8">
+				<!-- Logo and Social -->
+				<div>
+					<div class="text-2xl font-bold mb-4">
+						<img src="images/logo_footer.png" alt="ProFatto" />
+					</div>
+					<div class="flex space-x-2 mb-4">
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M1.53057 12.4373H3.9313V7.43103H6.09436L6.33203 4.94353H3.9313V3.68728C3.9313 3.52152 3.99453 3.36255 4.10709 3.24534C4.21965 3.12813 4.37231 3.06228 4.53148 3.06228H6.33203V0.562279H4.53148C3.73559 0.562279 2.9723 0.891519 2.40952 1.47757C1.84674 2.06362 1.53057 2.85848 1.53057 3.68728V4.94353H0.330202L0.0925293 7.43103H1.53057V12.4373Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M4.11644 0.249779H9.15798C11.0786 0.249779 12.639 1.87478 12.639 3.87478V9.12478C12.639 10.0862 12.2723 11.0082 11.6195 11.688C10.9666 12.3679 10.0812 12.7498 9.15798 12.7498H4.11644C2.19585 12.7498 0.635376 11.1248 0.635376 9.12478V3.87478C0.635376 2.91337 1.00213 1.99134 1.65496 1.31152C2.30778 0.631697 3.1932 0.249779 4.11644 0.249779ZM3.9964 1.49978C3.42336 1.49978 2.87379 1.73683 2.46859 2.15879C2.06338 2.58075 1.83574 3.15304 1.83574 3.74978V9.24978C1.83574 10.4935 2.80204 11.4998 3.9964 11.4998H9.27801C9.85106 11.4998 10.4006 11.2627 10.8058 10.8408C11.211 10.4188 11.4387 9.84652 11.4387 9.24978V3.74978C11.4387 2.50603 10.4724 1.49978 9.27801 1.49978H3.9964ZM9.78817 2.43728C9.98714 2.43728 10.178 2.51959 10.3187 2.6661C10.4594 2.81261 10.5384 3.01133 10.5384 3.21853C10.5384 3.42573 10.4594 3.62444 10.3187 3.77096C10.178 3.91747 9.98714 3.99978 9.78817 3.99978C9.5892 3.99978 9.39837 3.91747 9.25768 3.77096C9.11698 3.62444 9.03794 3.42573 9.03794 3.21853C9.03794 3.01133 9.11698 2.81261 9.25768 2.6661C9.39837 2.51959 9.5892 2.43728 9.78817 2.43728ZM6.63721 3.37478C7.4331 3.37478 8.1964 3.70402 8.75918 4.29007C9.32196 4.87612 9.63812 5.67098 9.63812 6.49978C9.63812 7.32858 9.32196 8.12344 8.75918 8.70949C8.1964 9.29554 7.4331 9.62478 6.63721 9.62478C5.84132 9.62478 5.07802 9.29554 4.51524 8.70949C3.95246 8.12344 3.63629 7.32858 3.63629 6.49978C3.63629 5.67098 3.95246 4.87612 4.51524 4.29007C5.07802 3.70402 5.84132 3.37478 6.63721 3.37478ZM6.63721 4.62478C6.15967 4.62478 5.7017 4.82232 5.36403 5.17395C5.02636 5.52558 4.83666 6.0025 4.83666 6.49978C4.83666 6.99706 5.02636 7.47397 5.36403 7.8256C5.7017 8.17724 6.15967 8.37478 6.63721 8.37478C7.11474 8.37478 7.57272 8.17724 7.91039 7.8256C8.24806 7.47397 8.43776 6.99706 8.43776 6.49978C8.43776 6.0025 8.24806 5.52558 7.91039 5.17395C7.57272 4.82232 7.11474 4.62478 6.63721 4.62478Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="14.4044" height="15" transform="translate(0.859863 0.374924)" fill="#8B941F" />
+								<path
+									d="M5.02512 3.4998C5.02496 3.83132 4.89834 4.14919 4.67312 4.3835C4.44789 4.6178 4.14251 4.74934 3.82416 4.74917C3.5058 4.74901 3.20054 4.61715 2.97554 4.38261C2.75054 4.14808 2.62423 3.83007 2.62439 3.49855C2.62455 3.16703 2.75117 2.84915 2.97639 2.61485C3.20162 2.38054 3.507 2.24901 3.82536 2.24917C4.14371 2.24934 4.44897 2.38119 4.67397 2.61573C4.89897 2.85027 5.02528 3.16828 5.02512 3.4998ZM5.06113 5.6748H2.6604V13.4998H5.06113V5.6748ZM8.85429 5.6748H6.46556V13.4998H8.83028V9.39355C8.83028 7.10605 11.6932 6.89355 11.6932 9.39355V13.4998H14.0639V8.54355C14.0639 4.6873 9.82659 4.83105 8.83028 6.7248L8.85429 5.6748Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="w-6 h-6 bg-profatto-accent rounded-full flex items-center justify-center text-xs">
+							<svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M5.28645 6.37478L8.4014 4.49978L5.28645 2.62478V6.37478ZM12.2246 1.48103C12.3026 1.77478 12.3566 2.16853 12.3926 2.66853C12.4346 3.16853 12.4526 3.59978 12.4526 3.97478L12.4887 4.49978C12.4887 5.86853 12.3926 6.87478 12.2246 7.51853C12.0745 8.08103 11.7264 8.44353 11.1863 8.59978C10.9042 8.68103 10.388 8.73728 9.59577 8.77478C8.81553 8.81853 8.10131 8.83728 7.44111 8.83728L6.48682 8.87478C3.97205 8.87478 2.40557 8.77478 1.78738 8.59978C1.24722 8.44353 0.899112 8.08103 0.749066 7.51853C0.671042 7.22478 0.617026 6.83103 0.581015 6.33103C0.539002 5.83103 0.520996 5.39978 0.520996 5.02478L0.484985 4.49978C0.484985 3.13103 0.581015 2.12478 0.749066 1.48103C0.899112 0.918529 1.24722 0.556029 1.78738 0.399779C2.06947 0.318529 2.58563 0.262279 3.37787 0.224779C4.15811 0.181029 4.87232 0.162279 5.53253 0.162279L6.48682 0.124779C9.00159 0.124779 10.5681 0.224779 11.1863 0.399779C11.7264 0.556029 12.0745 0.918529 12.2246 1.48103Z"
+									fill="white" />
+							</svg>
+						</div>
+					</div>
+					<p class="text-sm text-gray-400">Copyright 2025 © ProFatto</p>
+				</div>
+
+				<!-- Site Map -->
+				<div>
+					<h3 class="font-bold mb-4">MAPA DO SITE</h3>
+					<ul class="space-y-2 text-sm">
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">HOME</a></li>
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">SOBRE NÓS</a></li>
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">TENDÊNCIAS</a></li>
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">PROJETOS INSTAGRAM</a></li>
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">EXPERIENZAFATTO</a></li>
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">MARCAS E PRODUTOS</a></li>
+						<li><a href="#" class="hover:text-profatto-accent transition-colors">CONTATO</a></li>
+					</ul>
+				</div>
+
+				<!-- Store 1 -->
+				<div>
+					<h3 class="font-bold mb-4">LOJA 01</h3>
+					<div class="text-sm space-y-2">
+						<p><strong>ProFatto Florianópolis - SC</strong></p>
+						<p>R. Antônio Carlos Ferreira, 230 - Agronômica Florianópolis/SC - 88025-211</p>
+						<p><strong>Horário de atendimento:</strong></p>
+						<p>Seg a Sex: 09h às 18h | Sábado: 09h às 13h</p>
+						<p><strong>Telefone:</strong></p>
+						<p>(48) 3113-2600</p>
+					</div>
+				</div>
+
+				<!-- Store 2 -->
+				<div>
+					<h3 class="font-bold mb-4">LOJA 02</h3>
+					<div class="text-sm space-y-2">
+						<p><strong>ProFatto São José - SC</strong></p>
+						<p>R. Roseta, 247 - Kobrasol, São José/SC, 88102-310</p>
+						<p><strong>Horário de atendimento:</strong></p>
+						<p>Seg a Sex: 09h às 18h | Sábado: 09h às 13h</p>
+						<p><strong>Telefone:</strong></p>
+						<p>(48) 3113-2600</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="scripts/app.js"></script>
+</body>
+
+</html>
